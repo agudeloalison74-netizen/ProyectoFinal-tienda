@@ -21,3 +21,11 @@ function promedioPrecio() {
     console.log(`Número de productos: ${productos.length}`);
     console.log(`Promedio de precios: $${promedio.toLocaleString('es-CO', { maximumFractionDigits: 0 })}`);
 }
+
+function ordenarPrecio() {
+    console.clear();
+    console.log("⬇️ PRODUCTOS ORDENADOS (PRECIO MAYOR A MENOR)");
+    
+    const productosOrdenados = [...productos].sort((a, b) => b.precio - a.precio);
+    console.table(productosOrdenados);
+}
