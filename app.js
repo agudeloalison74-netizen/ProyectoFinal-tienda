@@ -13,13 +13,13 @@ const productos = [
 
 function mostrarProductos() {
     console.clear();
-    console.log("📋 LISTA DE TODOS LOS PRODUCTOS");
+    console.log(" LISTA DE TODOS LOS PRODUCTOS");
     console.log(`Total de productos: ${productos.length}`);
 }
 
 function productosCaros() {
     console.clear();
-    console.log("💰 PRODUCTOS CON PRECIO > $30.000");
+    console.log(" PRODUCTOS CON PRECIO > $30.000");
     
     const productosFiltrados = productos.filter(producto => producto.precio > 30000);
     console.table(productosFiltrados);
@@ -28,7 +28,7 @@ function productosCaros() {
 
 function nombresMayusculas() {
     console.clear();
-    console.log("🔤 NOMBRES DE PRODUCTOS EN MAYÚSCULAS");
+    console.log(" NOMBRES DE PRODUCTOS EN MAYÚSCULAS");
     
     const nombres = productos.map(producto => producto.nombre.toUpperCase());
     console.log(nombres);
