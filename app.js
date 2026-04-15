@@ -16,3 +16,21 @@ function mostrarProductos() {
     console.log("📋 LISTA DE TODOS LOS PRODUCTOS");
     console.log(`Total de productos: ${productos.length}`);
 }
+
+function productosCaros() {
+    console.clear();
+    console.log("💰 PRODUCTOS CON PRECIO > $30.000");
+    
+    const productosFiltrados = productos.filter(producto => producto.precio > 30000);
+    console.table(productosFiltrados);
+    console.log(`Productos encontrados: ${productosFiltrados.length}`);
+}
+
+function nombresMayusculas() {
+    console.clear();
+    console.log("🔤 NOMBRES DE PRODUCTOS EN MAYÚSCULAS");
+    
+    const nombres = productos.map(producto => producto.nombre.toUpperCase());
+    console.log(nombres);
+    console.table(nombres);
+}
