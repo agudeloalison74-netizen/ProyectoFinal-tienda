@@ -85,3 +85,5 @@ console.log("             de Productos             ");
 console.log("\n Sistema cargado correctamente.");
 console.log("Haz clic en el botón 'Abrir Menú' para comenzar.");
 console.log("\n Productos disponibles en el sistema:", productos.length);
+
+document.getElementById("btnMenu").addEventListener("click", menu);
