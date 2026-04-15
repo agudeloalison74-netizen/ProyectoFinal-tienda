@@ -11,3 +11,11 @@ const productos = [
 ];
 
 
+function nombresMayusculas() {
+    console.clear();
+    console.log("🔤 NOMBRES DE PRODUCTOS EN MAYÚSCULAS");
+    
+    const nombres = productos.map(producto => producto.nombre.toUpperCase());
+    console.log(nombres);
+    console.table(nombres);
+}
