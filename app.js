@@ -17,7 +17,7 @@ function promedioPrecio() {
     const sumaPrecios = productos.reduce((total, producto) => total + producto.precio, 0);
     const promedio = sumaPrecios / productos.length;
     
-    console.log(Suma total de precios: $${sumaPrecios.toLocaleString()});
-    console.log(Número de productos: ${productos.length});
-    console.log(Promedio de precios: $${promedio.toLocaleString('es-CO', { maximumFractionDigits: 0 })});
+    console.log(`Suma total de precios: $${sumaPrecios.toLocaleString()}`);
+    console.log(`Número de productos: ${productos.length}`);
+    console.log(`Promedio de precios: $${promedio.toLocaleString('es-CO', { maximumFractionDigits: 0 })}`);
 }
