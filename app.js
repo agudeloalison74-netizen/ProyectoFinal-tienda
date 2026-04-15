@@ -10,4 +10,10 @@ const productos = [
     { nombre: "Silla Gamer", precio: 85000, categoria: "Muebles" }
 ];
 
-
+function ordenarPrecio() {
+    console.clear();
+    console.log("⬇️ PRODUCTOS ORDENADOS (PRECIO MAYOR A MENOR)");
+    
+    const productosOrdenados = [...productos].sort((a, b) => b.precio - a.precio);
+    console.table(productosOrdenados);
+}
