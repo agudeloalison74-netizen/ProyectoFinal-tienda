@@ -11,3 +11,11 @@ const productos = [
 ];
 
 
+function productosCaros() {
+    console.clear();
+    console.log("💰 PRODUCTOS CON PRECIO > $30.000");
+    
+    const productosFiltrados = productos.filter(producto => producto.precio > 30000);
+    console.table(productosFiltrados);
+    console.log(`Productos encontrados: ${productosFiltrados.length}`);
+}
