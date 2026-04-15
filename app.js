@@ -10,4 +10,14 @@ const productos = [
     { nombre: "Silla Gamer", precio: 85000, categoria: "Muebles" }
 ];
 
-
+function promedioPrecio() {
+    console.clear();
+    console.log(" PROMEDIO DE PRECIOS");
+    
+    const sumaPrecios = productos.reduce((total, producto) => total + producto.precio, 0);
+    const promedio = sumaPrecios / productos.length;
+    
+    console.log(Suma total de precios: $${sumaPrecios.toLocaleString()});
+    console.log(Número de productos: ${productos.length});
+    console.log(Promedio de precios: $${promedio.toLocaleString('es-CO', { maximumFractionDigits: 0 })});
+}
