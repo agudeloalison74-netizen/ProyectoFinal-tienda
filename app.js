@@ -11,3 +11,8 @@ const productos = [
 ];
 
 
+function mostrarProductos() {
+    console.clear();
+    console.log("📋 LISTA DE TODOS LOS PRODUCTOS");
+    console.log(`Total de productos: ${productos.length}`);
+}
